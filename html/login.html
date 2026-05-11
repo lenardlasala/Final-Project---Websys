@@ -11,9 +11,12 @@
         <form onsubmit="submitform(event)" class="login">
             <h1>Room Grid</h1>
             <h3>Log In</h3>
-            <input type="text" id="username" placeholder="Username" value="admin"/> <br>  <!-- pre-filled "admin" username for testing purposes -->
-            <input type="password" id="password" placeholder="Password" value="pogiako123"/> <br> <!-- pre-filled "pogiako123" password for testing purposes -->
+            <input type="text" id="username" placeholder="Username" value="admin" required/> <br>  <!-- pre-filled "admin" username for testing purposes -->
+            <input type="password" id="password" placeholder="Password" value="pogiako123" required/> <br> <!-- pre-filled "pogiako123" password for testing purposes -->
             <button type="submit">Log in</button>
+            <div class="register">
+                <p for="register-link">Don't have an account? <a href="register.html" id="register-link">Register</a></p>
+           </div>
         </form>
     </div>
     <script src="../js/login-dashboard.js"></script>
